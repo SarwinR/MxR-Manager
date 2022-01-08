@@ -5,8 +5,10 @@ module.exports = (client) => {
 
         //check if the user is whitelisted
         const target = message.member
-        if(!target.kickable){
-            return
+        if(target){
+            if(!target.kickable){
+                return
+            }
         }
 
         //check for mass mentions
@@ -27,8 +29,7 @@ module.exports = (client) => {
             }
         });
 
-        if(containShadyLink)
-        {
+        if(containShadyLink){
             await message.delete()
             const warningMessage = `${message.member} The messages you just sent contains shady links!`
             message.channel.send(warningMessage).then(msg => {
