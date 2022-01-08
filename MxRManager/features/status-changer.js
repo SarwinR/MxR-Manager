@@ -1,7 +1,6 @@
 module.exports = (client) => {
     const statusOptions = [
-        'Moderating the server',
-        'Yay am helping'
+        'Am currently under development',
     ]
 
     let counter = 0
