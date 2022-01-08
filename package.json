@@ -1,0 +1,30 @@
+{
+  "name": "MxR-Manager",
+  "version": "1.0.0",
+  "main": "Code/bot.js",
+  "dependencies": {
+    "discord.js": "^13.5.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "wokcommands": "^1.5.3"
+  },
+  "devDependencies": {
+    "node": "^16.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarwinR/MxR-Manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarwinR/MxR-Manager/issues"
+  },
+  "homepage": "https://github.com/SarwinR/MxR-Manager#readme",
+  "description": ""
+}

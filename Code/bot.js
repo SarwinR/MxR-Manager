@@ -1,3 +1,4 @@
+const keepAlive = require('./server');
 const { Client, Intents, Permissions } = require('discord.js')
 const WOKCommands = require('wokcommands')
 const path = require('path')
@@ -11,6 +12,8 @@ const client = new Client({
         Intents.FLAGS.GUILD_MESSAGES
     ]
 })
+
+
 //Permissions.FLAGS.mana
 client.on('ready', () => {
     new WOKCommands(client, {
@@ -23,4 +26,5 @@ client.on('ready', () => {
     console.log('Bot is ready')
 })
 
-client.login(process.env.BOT_TOKEN)
+keepAlive();
+client.login(process.env['BOT_TOKEN'])
