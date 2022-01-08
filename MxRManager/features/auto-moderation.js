@@ -5,8 +5,10 @@ module.exports = (client) => {
 
         //check if the user is whitelisted
         const target = message.member
-        if(!target.kickable){
-            return
+        if(target){
+            if(!target.kickable){
+                return
+            }
         }
 
         //check for mass mentions
