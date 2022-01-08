@@ -3,7 +3,8 @@ dotenv.config()
 
 module.exports = {
     prefix: '.',
-    botToken: process.env.BOT_TOKEN,
+  
+    botToken: process.env['BOT_TOKEN'],
 
     //for auto-moderation
     massMentionThreshold: 5,

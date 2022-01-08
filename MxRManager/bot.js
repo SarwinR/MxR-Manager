@@ -1,4 +1,5 @@
-const config = require('./config');
+const config = require('./config')
+const keepAlive = require('./server')
 const { Client, Intents, Permissions } = require('discord.js')
 const WOKCommands = require('wokcommands')
 const path = require('path')
@@ -58,5 +59,5 @@ client.on('ready', () => {
     console.log('Bot is ready')
 })
 
-//require('./server').keepAlive()
+keepAlive()
 client.login(config.botToken)

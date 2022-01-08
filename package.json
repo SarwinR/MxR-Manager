@@ -1,7 +1,7 @@
 {
   "name": "MxR-Manager",
   "version": "1.0.0",
-  "main": "Code/bot.js",
+  "main": "MxRManager/bot.js",
   "dependencies": {
     "discord.js": "^13.5.0",
     "dotenv": "^10.0.0",
