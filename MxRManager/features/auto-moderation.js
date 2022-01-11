@@ -29,8 +29,7 @@ module.exports = (client) => {
             }
         });
 
-        if(containShadyLink)
-        {
+        if(containShadyLink){
             await message.delete()
             const warningMessage = `${message.member} The messages you just sent contains shady links!`
             message.channel.send(warningMessage).then(msg => {
